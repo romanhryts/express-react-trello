@@ -23,7 +23,7 @@ mongoose.connect(
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: [ 'https://clever-arithmetic-8549f1.netlify.app/', 'http://localhost:5173' ] }));
+app.use(cors({ credentials: true, origin: [ 'https://clever-arithmetic-8549f1.netlify.app', 'http://localhost:5173', 'https://react-mobx-trello-clone.vercel.app' ] }));
 
 app.use('/lists', listsRouter);
 app.use('/card', cardRouter);
